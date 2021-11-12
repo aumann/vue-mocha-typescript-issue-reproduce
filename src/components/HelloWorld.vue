@@ -129,6 +129,11 @@
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
 
+function fun() {
+  const s = "";
+  const l = s?.length;
+}
+
 @Component
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
